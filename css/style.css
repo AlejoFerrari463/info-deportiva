@@ -1,0 +1,148 @@
+* {
+
+    padding: 0;
+    margin: 0;
+
+}
+
+/* HEADER - INICIO */
+
+.headers-fondo {
+
+
+    display: flex; 
+    width: 100%;
+    height: 70px;
+    background-color: palevioletred;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+   
+
+}
+
+a {
+
+    text-decoration: none;
+    color: aqua;
+
+}
+
+.nav-item {
+
+    display: inline;
+    padding: 0 20px;
+    font-size: 20px;
+    
+
+}
+
+/* HEADER - FIN */
+
+/* MENU-HAMBURGUESA - INICIO */
+
+.menu-hamburguesa {
+
+    position: absolute;
+    top: 11px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.menu-imagen {
+
+    width: 60px;
+    object-fit: contain;
+
+
+}
+
+.menu-desplegar {
+
+    position: fixed;
+    width: 50px;
+    height: 100vh;
+    background-color: red;
+    left: -70vh;
+    top: 0;
+
+}
+
+.menu-hamburguesa:hover > .menu-desplegar {
+
+    left: 0px;
+    background-color: green;
+
+}
+
+/* MENU-HAMBURGUESA - FIN */
+
+
+/* CARDS - INICIO */
+
+.cards-contenedor {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center; 
+
+
+}
+
+.cards {
+
+    margin-top: 50px;
+    width: 90%;
+    height: 300px;
+    background-color: gold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+
+
+}
+
+
+.pp {
+
+    width: 50%;
+    height: 100px;
+    background-color: blue;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 992px) {
+
+    .menu-hamburguesa {
+
+        display: none;
+
+    }
+ 
+
+}
+
+@media screen and (max-width: 991px) {
+
+    nav {
+
+        display: none;
+
+    }
+
+}
