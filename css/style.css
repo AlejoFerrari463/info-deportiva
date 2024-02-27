@@ -95,14 +95,31 @@ a {
 .cards {
 
     margin-top: 50px;
-    width: 90%;
-    height: 300px;
+    width: 92%;
+    height: 220px;
     background-color: gold;
+    padding: 0 5px;
+    box-shadow: 2px 2px 6px black;
+
+}
+
+.cards-resultado {
+
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+    margin-top: 30px;
+    padding: 0 5px;
+   
 
+}
+
+.cards-imagen {
+
+    height: 110px;
+    width: auto;
+    
+  
 
 }
 
