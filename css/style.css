@@ -91,6 +91,14 @@ a {
 
 }
 
+.cards-contenedor-tenis {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center; 
+
+}
+
 .cards {
 
     margin-top: 40px;
@@ -112,6 +120,18 @@ a {
     text-align: center;
    
 
+}
+
+.cards-resultado-tenis {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    margin-top: 30px;
+
+    text-align: center;
+   
 }
 
 .cards-imagen {
@@ -140,9 +160,7 @@ a {
 }
 
 
-
-
-
+/* CARDS - FIN */
 
 
 
