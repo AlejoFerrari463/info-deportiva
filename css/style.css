@@ -96,9 +96,9 @@ a {
 /* MENU-HAMBURGUESA - FIN */
 
 
-/* CARDS - INICIO */
+/* CARDS FUTBOL - INICIO */
 
-.cards-contenedor {
+.cards-contenedor-futbol {
 
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -106,15 +106,7 @@ a {
 
 }
 
-.cards-contenedor-tenis {
-
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-items: center; 
-
-}
-
-.cards {
+.cards-futbol {
 
     margin-top: 40px;
     width: 92%;
@@ -125,7 +117,7 @@ a {
 
 }
 
-.cards-resultado {
+.cards-resultado-futbol {
 
     display: flex;
     justify-content: space-around;
@@ -136,6 +128,83 @@ a {
    
 
 }
+
+.cards-imagen-futbol {
+
+    height: 90px;
+    width: 90px;
+    
+
+}
+
+/* CARDS FUTBOL - FIN */
+
+
+/* CARDS BASQUET - INICIO */
+
+.cards-contenedor-basquet {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center; 
+
+}
+
+.cards-basquet {
+
+    margin-top: 40px;
+    width: 92%;
+    height: auto;
+    background-color: gold;
+    box-shadow: 2px 2px 6px black;
+    padding-bottom: 40px;
+
+}
+
+.cards-resultado-basquet {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+
+    text-align: center;
+   
+
+}
+
+.cards-imagen-basquet {
+
+    height: 110px;
+    width: 110px;
+    
+
+}
+
+/* CARDS BASQUET - FIN */
+
+
+/* CARDS TENIS - INICIO */
+
+.cards-contenedor-tenis {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center; 
+
+}
+
+.cards-tenis {
+
+    margin-top: 40px;
+    width: 92%;
+    height: auto;
+    background-color: gold;
+    box-shadow: 2px 2px 6px black;
+    padding-bottom: 40px;
+
+}
+
 
 .cards-resultado-tenis {
 
@@ -149,21 +218,15 @@ a {
    
 }
 
-.cards-imagen {
+.cards-imagen-tenis {
 
-    height: 90px;
-    width: 90px;
+    height: 45px;
+    width: 45px;
     
 
 }
 
-.cards-imagen-basquet {
-
-    height: 110px;
-    width: 110px;
-    
-
-}
+/* CARDS TENIS - FIN */
 
 
 .pp {
@@ -175,7 +238,7 @@ a {
 }
 
 
-/* CARDS - FIN */
+
 
 
 
