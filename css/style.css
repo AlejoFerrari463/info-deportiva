@@ -37,6 +37,7 @@ a {
 
 }
 
+
 /* HEADER - FIN */
 
 /* MENU-HAMBURGUESA - INICIO */
@@ -46,9 +47,6 @@ a {
     position: absolute;
     top: 11px;
     left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
 }
 
@@ -63,11 +61,12 @@ a {
 .menu-desplegar {
 
     position: fixed;
-    width: 50px;
+    width: 60vw;
     height: 100vh;
-    background-color: red;
+    background-color: green;
     left: -70vh;
     top: 0;
+    transition: 0.2s all;
 
 }
 
@@ -77,6 +76,22 @@ a {
     background-color: green;
 
 }
+
+.menu-contenedor {
+
+    padding-left: 50px;
+
+}
+
+.item-hamburguesa {
+
+    display: block;
+    padding: 20px 00px;
+    font-size: 20px;
+
+}
+
+
 
 /* MENU-HAMBURGUESA - FIN */
 
