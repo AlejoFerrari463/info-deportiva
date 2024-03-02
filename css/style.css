@@ -62,20 +62,16 @@ a {
 
     position: fixed;
     width: 60vw;
-    height: 100vh;
+    height: 100%;
     background-color: green;
-    left: -70vh;
     top: 0;
     transition: 0.2s all;
+    z-index: 99999;
+   
 
 }
 
-.menu-hamburguesa:hover > .menu-desplegar {
 
-    left: 0px;
-    background-color: green;
-
-}
 
 .menu-contenedor {
 
