@@ -3,15 +3,11 @@ const menuHamburguesa = document.querySelector("#menu-hamburguesa")
 
 menuHamburguesa.addEventListener("click",()=>{
 
-    const existe = menuHamburguesa.querySelector(".menu-desplegar")
-
-    const desplegar = document.createElement("div")
-    desplegar.classList.add("menu-desplegar")
-    const menu = document.createElement("div")
+    const menuDesplegar = menuHamburguesa.querySelector(".menu-desplegar")
+    menuDesplegar.classList.add("menu-active")
     const currentPath = window.location.pathname;
-    console.log(currentPath)
     if (currentPath=="/index.html"){
-        menu.innerHTML = `
+        menuDesplegar.innerHTML = `
         <ul class="menu-contenedor">
             <li class="item-hamburguesa"><a href="index.html">DAILY</a></li>
             <li class="item-hamburguesa"><a href="html/futbol.html">FUTBOL</a></li>
@@ -23,7 +19,7 @@ menuHamburguesa.addEventListener("click",()=>{
     }
     else{
 
-        menu.innerHTML = `
+        menuDesplegar.innerHTML = `
         <ul class="menu-contenedor" >
             <li class="item-hamburguesa"><a href="../index.html">DAILY</a></li>
             <li class="item-hamburguesa"><a href="futbol.html">FUTBOL</a></li>
@@ -35,28 +31,23 @@ menuHamburguesa.addEventListener("click",()=>{
 
     }
    
-    desplegar.appendChild(menu)
 
+   
 
-    menuHamburguesa.appendChild(desplegar)
-
-    if (existe){
-        menuHamburguesa.removeChild(desplegar)
-    }
 
 })
 
 document.addEventListener("click", () => {
 
     const menuDesplegar = document.querySelector(".menu-desplegar");
-    console.log(menuHamburguesa.contains(event.target))
     if (menuDesplegar && !menuHamburguesa.contains(event.target)) {
-        menuHamburguesa.removeChild(menuDesplegar);
+        menuDesplegar.classList.remove("menu-active")
+
     }
 });
 
 
-document.addEventListener("touchmove", function(event) {
+document.addEventListener("touchmove", () =>{
     const menuDesplegar = document.querySelector(".menu-desplegar");
     // Verificar si el evento touchmove ocurrió dentro del menú desplegable
     if (menuDesplegar && menuDesplegar.contains(event.target)) {
