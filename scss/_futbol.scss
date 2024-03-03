@@ -1,0 +1,42 @@
+/* FUTBOL - INICIO */
+
+.cards-contenedor-futbol {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center; 
+
+}
+
+.cards-futbol {
+
+    margin-top: 40px;
+    width: 92%;
+    height: auto;
+    background-color: gold;
+    box-shadow: 2px 2px 6px black;
+    padding-bottom: 40px;
+
+}
+
+.cards-resultado-futbol {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+
+    text-align: center;
+   
+
+}
+
+.cards-imagen-futbol {
+
+    height: 90px;
+    width: 90px;
+    
+
+}
+
+/* FUTBOL - FIN */

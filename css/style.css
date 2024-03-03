@@ -1,277 +1,179 @@
+/* GENERALES - INICIO */
 * {
-
-    padding: 0;
-    margin: 0;
-
+  padding: 0;
+  margin: 0;
 }
 
+/* GENERALES - FIN */
 /* HEADER - INICIO */
-
 .headers-fondo {
-
-
-    display: flex; 
-    width: 100%;
-    height: 70px;
-    background-color: palevioletred;
-    align-items: center;
-    justify-content: center;
-    padding-top: 10px;
-   
-
+  display: flex;
+  width: 100%;
+  height: 70px;
+  background-color: palevioletred;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
 }
 
 a {
-
-    text-decoration: none;
-    color: aqua;
-
+  text-decoration: none;
+  color: aqua;
 }
 
 .nav-item {
-
-    display: inline;
-    padding: 0 20px;
-    font-size: 20px;
-    
-
+  display: inline;
+  padding: 0 20px;
+  font-size: 20px;
 }
 
-
 /* HEADER - FIN */
-
 /* MENU-HAMBURGUESA - INICIO */
-
 .menu-hamburguesa {
-
-    position: absolute;
-    top: 11px;
-    left: 0;
-    
-
+  position: absolute;
+  top: 11px;
+  left: 0;
 }
 
 .menu-imagen {
-
-    width: 60px;
-    object-fit: contain;
-    cursor: pointer;
-
-
+  width: 60px;
+  object-fit: contain;
+  cursor: pointer;
 }
 
 .menu-desplegar {
-
-    position: fixed;
-    width: 60vw;
-    height: 100vh;
-    background-color: green;
-    top: 0;
-    left: -100%;
-    z-index: 99999;
-    transition: 1s left;
-
+  position: fixed;
+  width: 60vw;
+  height: 100vh;
+  background-color: green;
+  top: 0;
+  left: -100%;
+  z-index: 99999;
+  transition: 1s left;
 }
 
 .menu-active {
-
-    left: 0;
-    transition: 0.4s left;
+  left: 0;
+  transition: 0.4s left;
 }
-
-
 
 .menu-contenedor {
-
-    display: inline-block;
-    padding: 0px;
-    text-align: start;
-    margin-left: 50px;
-    
-
+  display: inline-block;
+  padding: 0px;
+  text-align: start;
+  margin-left: 50px;
+  margin-top: 20px;
 }
 
-.item-hamburguesa {
-
-    display: block;
-    padding: 20px 0px;
-    font-size: 20px;
-    
-
+.menu-item {
+  display: block;
+  padding: 20px 0px;
+  font-size: 20px;
 }
-
-
 
 /* MENU-HAMBURGUESA - FIN */
-
-
-/* CARDS FUTBOL - INICIO */
-
+/* FUTBOL - INICIO */
 .cards-contenedor-futbol {
-
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center; 
-
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
 }
 
 .cards-futbol {
-
-    margin-top: 40px;
-    width: 92%;
-    height: auto;
-    background-color: gold;
-    box-shadow: 2px 2px 6px black;
-    padding-bottom: 40px;
-
+  margin-top: 40px;
+  width: 92%;
+  height: auto;
+  background-color: gold;
+  box-shadow: 2px 2px 6px black;
+  padding-bottom: 40px;
 }
 
 .cards-resultado-futbol {
-
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 30px;
-
-    text-align: center;
-   
-
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 30px;
+  text-align: center;
 }
 
 .cards-imagen-futbol {
-
-    height: 90px;
-    width: 90px;
-    
-
+  height: 90px;
+  width: 90px;
 }
 
-/* CARDS FUTBOL - FIN */
-
-
-/* CARDS BASQUET - INICIO */
-
+/* FUTBOL - FIN */
+/* BASQUET - INICIO */
 .cards-contenedor-basquet {
-
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center; 
-
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
 }
 
 .cards-basquet {
-
-    margin-top: 40px;
-    width: 92%;
-    height: auto;
-    background-color: gold;
-    box-shadow: 2px 2px 6px black;
-    padding-bottom: 40px;
-
+  margin-top: 40px;
+  width: 92%;
+  height: auto;
+  background-color: gold;
+  box-shadow: 2px 2px 6px black;
+  padding-bottom: 40px;
 }
 
 .cards-resultado-basquet {
-
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 30px;
-
-    text-align: center;
-   
-
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 30px;
+  text-align: center;
 }
 
 .cards-imagen-basquet {
-
-    height: 110px;
-    width: 110px;
-    
-
+  height: 110px;
+  width: 110px;
 }
 
-/* CARDS BASQUET - FIN */
-
-
-/* CARDS TENIS - INICIO */
-
+/* BASQUET - FIN */
+/* TENIS - INICIO */
 .cards-contenedor-tenis {
-
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-items: center; 
-
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
 }
 
 .cards-tenis {
-
-    margin-top: 40px;
-    width: 92%;
-    height: auto;
-    background-color: gold;
-    box-shadow: 2px 2px 6px black;
-    padding-bottom: 40px;
-
+  margin-top: 40px;
+  width: 92%;
+  height: auto;
+  background-color: gold;
+  box-shadow: 2px 2px 6px black;
+  padding-bottom: 40px;
 }
 
-
 .cards-resultado-tenis {
-
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-items: center;
-    align-items: center;
-    margin-top: 30px;
-
-    text-align: center;
-   
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  margin-top: 30px;
+  text-align: center;
 }
 
 .cards-imagen-tenis {
-
-    height: 45px;
-    width: 45px;
-    
-
+  height: 45px;
+  width: 45px;
 }
 
-/* CARDS TENIS - FIN */
-
-
-.pp {
-
-    width: 50%;
-    height: 100px;
-    background-color: blue;
-
-}
-
-
-
-
-
-
-
-
-
-
+/* TENIS - FIN */
+/* MEDIAS - INICIO */
 @media screen and (min-width: 992px) {
-
-    .menu-hamburguesa {
-
-        display: none;
-
-    }
- 
-
+  .menu-hamburguesa {
+    display: none;
+  }
 }
-
 @media screen and (max-width: 991px) {
-
-    nav {
-
-        display: none;
-
-    }
-
+  nav {
+    display: none;
+  }
 }
+/* MEDIAS - FIN */
+
+/*# sourceMappingURL=style.css.map */
