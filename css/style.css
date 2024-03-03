@@ -83,15 +83,20 @@ a {
 
 .menu-contenedor {
 
-    padding-left: 50px;
+    display: inline-block;
+    padding: 0px;
+    text-align: start;
+    margin-left: 50px;
+    background-color: red;
 
 }
 
 .item-hamburguesa {
 
     display: block;
-    padding: 20px 00px;
+    padding: 20px 0px;
     font-size: 20px;
+    
 
 }
 
