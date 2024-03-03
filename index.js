@@ -8,24 +8,24 @@ menuHamburguesa.addEventListener("click",()=>{
     const currentPath = window.location.pathname;
     if (currentPath=="/index.html"){
         menuDesplegar.innerHTML = `
-        <ul class="menu-contenedor">
-            <li class="item-hamburguesa"><a href="index.html">DAILY</a></li>
-            <li class="item-hamburguesa"><a href="html/futbol.html">FUTBOL</a></li>
-            <li class="item-hamburguesa"><a href="html/basquet.html">BASQUET</a></li>
-            <li class="item-hamburguesa"><a href="html/tenis.html">TENIS</a></li>
-        </ul>
+        <div class="menu-contenedor">
+            <span class="item-hamburguesa"><a href="index.html">DAILY</a></span>
+            <span class="item-hamburguesa"><i class="fa-regular fa-futbol fa-lg me-2"></i><a href="html/futbol.html">FUTBOL</a></span>
+            <span class="item-hamburguesa"><i class="fa-solid fa-basketball fa-lg me-2"></i><a href="html/basquet.html">BASQUET</a></span>
+            <span class="item-hamburguesa"><i class="fa-solid fa-table-tennis-paddle-ball fa-lg me-2"></i><a href="html/tenis.html">TENIS</a></span>
+        </div>
     
         `
     }
     else{
 
         menuDesplegar.innerHTML = `
-        <ul class="menu-contenedor" >
-            <li class="item-hamburguesa"><a href="../index.html">DAILY</a></li>
-            <li class="item-hamburguesa"><a href="futbol.html">FUTBOL</a></li>
-            <li class="item-hamburguesa"><a href="basquet.html">BASQUET</a></li>
-            <li class="item-hamburguesa"><a href="tenis.html">TENIS</a></li>
-        </ul>
+        <div class="menu-contenedor" >
+            <span class="item-hamburguesa"><a href="../index.html">DAILY</a></span>
+            <span class="item-hamburguesa"><i class="fa-regular fa-futbol fa-lg me-2"></i><a href="futbol.html">FUTBOL</a></span>
+            <span class="item-hamburguesa"><i class="fa-solid fa-basketball fa-lg me-2"></i><a href="basquet.html">BASQUET</a></span>
+            <span class="item-hamburguesa"><i class="fa-solid fa-table-tennis-paddle-ball fa-lg me-2"></i><a href="tenis.html">TENIS</a></span>
+        </div>
         
         `
 
