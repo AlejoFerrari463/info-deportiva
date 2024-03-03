@@ -22,5 +22,71 @@
 
 }
 
+@media screen and (min-width: 0px) and (max-width: 560px){
+
+    .cards-contenedor-tenis {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .cards-tenis {
+
+        width: 97%;
+
+    }
+
+    .cards-contenedor-basquet {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .cards-futbol {
+
+        width: 97%;
+    }
+
+    .cards-contenedor-futbol {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .cards-basquet {
+
+        width: 97%;
+
+    }
+
+
+
+}
+
+@media screen and (min-width: 561px) and (max-width: 992px){
+
+    .cards-contenedor-tenis {
+
+        grid-template-columns: 1fr;
+
+    }
+  
+
+    .cards-contenedor-basquet {
+
+        grid-template-columns: 1fr;
+
+    }
+
+ 
+    .cards-contenedor-futbol {
+
+        grid-template-columns: 1fr;
+
+    }
+
+   
+}
+
 
 /* MEDIAS - FIN */
