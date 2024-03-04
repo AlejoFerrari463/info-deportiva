@@ -63,6 +63,9 @@ if (localStorage.getItem("tema") == "light") {
       element.style.color = "black";
     });
 
+
+   
+
   });
 
 } 
@@ -158,6 +161,7 @@ toogler.addEventListener("click", () => {
 
     let header = document.querySelector(".headers-fondo")
     header.style.backgroundColor = "#F5A454"
+
     let links = document.querySelectorAll(".nav-link")
     links.forEach((element)=>{
         element.style.color = "black"
@@ -171,7 +175,6 @@ toogler.addEventListener("click", () => {
     })
 
     let h1 = document.querySelectorAll("h1");
-
     h1.forEach((element)=>{
         element.style.color = "black"
     })
@@ -181,9 +184,6 @@ toogler.addEventListener("click", () => {
     let tenis = document.querySelectorAll(".cards-tenis");
     let basquet = document.querySelectorAll(".cards-basquet");
     let span = document.querySelectorAll("span");
-
-   
-
     futbol.forEach((element) => {
       element.style.backgroundColor = "white";
       element.style.color = "black";
@@ -205,8 +205,6 @@ toogler.addEventListener("click", () => {
     span.forEach((element) => {
       element.style.color = "black";
     });
-
- 
 
 
   } 
@@ -281,6 +279,8 @@ toogler.addEventListener("click", () => {
 
 
 
+
+
 const menuHamburguesa = document.querySelector("#menu-hamburguesa");
 
 menuHamburguesa.addEventListener("click", () => {
@@ -297,7 +297,8 @@ menuHamburguesa.addEventListener("click", () => {
         </div>
     
         `;
-  } else {
+  } 
+  else {
     menuDesplegar.innerHTML = `
         <div class="menu-contenedor" >
             <span class="menu-item"><i class="fa-regular fa-calendar fa-lg me-2"></i><a class="menu-link" href="../index.html">DAILY</a></span>
@@ -308,6 +309,41 @@ menuHamburguesa.addEventListener("click", () => {
         
         `;
   }
+
+  if (localStorage.getItem("tema") == "light"){
+
+    let menuDesplegar = document.querySelector(".menu-desplegar")
+    menuDesplegar.style.backgroundColor = "white"
+    menuDesplegar.style.boxShadow = "0px 20px 30px black"
+
+    let menuIcons = document.querySelectorAll(".menu-item")
+    menuIcons.forEach((element)=>{
+
+        element.style.color = "black"
+
+    })
+
+    let menuLinks = document.querySelectorAll(".menu-link")
+    menuLinks.forEach((element)=>{
+
+        element.style.color = "black"
+
+    })
+
+
+
+  }
+
+  if (localStorage.getItem("tema") == "dark"){
+
+    let menuDesplegar = document.querySelector(".menu-desplegar")
+    menuDesplegar.style.backgroundColor = "#291D1E"
+    menuDesplegar.style.boxShadow = "0px 20px 30px #F6D7AC"
+  }
+
+  
+ 
+
 });
 
 document.addEventListener("click", () => {
