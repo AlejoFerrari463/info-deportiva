@@ -4,27 +4,35 @@
   margin: 0;
 }
 
+body {
+  background-color: #ddd;
+}
+
+a {
+  text-decoration: none;
+}
+
 /* GENERALES - FIN */
 /* HEADER - INICIO */
 .headers-fondo {
   display: flex;
   width: 100%;
   height: 70px;
-  background-color: palevioletred;
+  background-color: #291D1E;
   align-items: center;
   justify-content: center;
   padding-top: 10px;
 }
 
-a {
-  text-decoration: none;
-  color: aqua;
-}
-
-.nav-item {
+.nav-link {
   display: inline;
+  color: #F5A454;
   padding: 0 20px;
   font-size: 20px;
+}
+
+.nav-link:hover {
+  color: red;
 }
 
 /* HEADER - FIN */
@@ -71,6 +79,11 @@ a {
   font-size: 20px;
 }
 
+.menu-link {
+  color: #F5A454;
+  text-decoration: none;
+}
+
 /* MENU-HAMBURGUESA - FIN */
 /* FUTBOL - INICIO */
 .cards-contenedor-futbol {
@@ -83,9 +96,10 @@ a {
   margin-top: 40px;
   width: 92%;
   height: auto;
-  background-color: gold;
-  box-shadow: 2px 2px 6px black;
+  background-color: #291D1E;
+  box-shadow: 5px 5px 15px #F6D7AC, -5px -5px 15px #F6D7AC;
   padding-bottom: 40px;
+  color: #F5A454;
 }
 
 .cards-resultado-futbol {
