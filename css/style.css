@@ -5,11 +5,19 @@
 }
 
 body {
-  background-color: #ddd;
+  background-color: black;
 }
 
 a {
   text-decoration: none;
+}
+
+h1 {
+  color: white;
+}
+
+span {
+  color: #F6D7AC;
 }
 
 /* GENERALES - FIN */
@@ -32,7 +40,7 @@ a {
 }
 
 .nav-link:hover {
-  color: red;
+  color: #F6D7AC;
 }
 
 /* HEADER - FIN */
@@ -53,11 +61,12 @@ a {
   position: fixed;
   width: 60vw;
   height: 100vh;
-  background-color: green;
+  background-color: #291D1E;
   top: 0;
   left: -100%;
   z-index: 99999;
   transition: 0.4s left;
+  box-shadow: 0px 20px 30px #F6D7AC;
 }
 
 .menu-active {
@@ -127,9 +136,10 @@ a {
   margin-top: 40px;
   width: 92%;
   height: auto;
-  background-color: gold;
-  box-shadow: 2px 2px 6px black;
+  background-color: #291D1E;
+  box-shadow: 5px 5px 15px #F6D7AC, -5px -5px 15px #F6D7AC;
   padding-bottom: 40px;
+  color: #F5A454;
 }
 
 .cards-resultado-basquet {
@@ -157,9 +167,10 @@ a {
   margin-top: 40px;
   width: 92%;
   height: auto;
-  background-color: gold;
-  box-shadow: 2px 2px 6px black;
+  background-color: #291D1E;
+  box-shadow: 5px 5px 15px #F6D7AC, -5px -5px 15px #F6D7AC;
   padding-bottom: 40px;
+  color: #F5A454;
 }
 
 .cards-resultado-tenis {
