@@ -7,17 +7,39 @@ if (localStorage.getItem("tema") == "light") {
   todos.forEach((element) => {
 
     element.classList.replace("dark-mode", "light-mode");
-    toogler.style.boxShadow = "0 0 10px black"
 
+    toogler.style.boxShadow = "0 0 10px black"
 
     const active = document.querySelector(".toogler-tema");
     active.style.transition = "none";
     active.classList.add("active");
 
+    
+    let header = document.querySelector(".headers-fondo")
+    header.style.backgroundColor = "#F5A454"
+    let links = document.querySelectorAll(".nav-link")
+    links.forEach((element)=>{
+        element.style.color = "black"
+        element.addEventListener("mouseenter", ()=> {
+            element.style.color = "white";
+        });
+            element.addEventListener("mouseleave", ()=> {
+            element.style.color = "#291D1E"; 
+        });
+
+    })
+    
+    let h1 = document.querySelectorAll("h1");
+
+    h1.forEach((element)=>{
+        element.style.color = "black"
+    })
+
     let futbol = document.querySelectorAll(".cards-futbol");
     let tenis = document.querySelectorAll(".cards-tenis");
     let basquet = document.querySelectorAll(".cards-basquet");
     let span = document.querySelectorAll("span");
+
 
     futbol.forEach((element) => {
       element.style.backgroundColor = "white";
@@ -46,7 +68,7 @@ if (localStorage.getItem("tema") == "light") {
 } 
 else {
 
-  const todos = document.querySelectorAll(".dark-mode");
+  const todos = document.querySelectorAll(".light-mode");
 
   todos.forEach((element) => {
 
@@ -61,10 +83,33 @@ else {
 
     localStorage.setItem("tema", "dark");
 
+    let header = document.querySelector(".headers-fondo")
+    header.style.backgroundColor = "#291D1E"
+    let links = document.querySelectorAll(".nav-link")
+    links.forEach((element)=>{
+        element.style.color = "#F5A454"
+        element.addEventListener("mouseenter", ()=> {
+            element.style.color = "#F6D7AC";
+        });
+            element.addEventListener("mouseleave", ()=> {
+            element.style.color = "#F5A454"; 
+        });
+
+    })
+
+    
+    let h1 = document.querySelectorAll("h1");
+
+    h1.forEach((element)=>{
+        element.style.color = "white"
+    })
+    
+
     let futbol = document.querySelectorAll(".cards-futbol");
     let tenis = document.querySelectorAll(".cards-tenis");
     let basquet = document.querySelectorAll(".cards-basquet");
     let span = document.querySelectorAll("span");
+   
 
     futbol.forEach((element) => {
       element.style.backgroundColor = "#291D1E";
@@ -93,6 +138,9 @@ else {
 }
 
 
+
+
+
 toogler.addEventListener("click", () => {
 
   const mode = document.querySelector(".dark-mode");
@@ -108,10 +156,33 @@ toogler.addEventListener("click", () => {
 
     localStorage.setItem("tema", "light");
 
+    let header = document.querySelector(".headers-fondo")
+    header.style.backgroundColor = "#F5A454"
+    let links = document.querySelectorAll(".nav-link")
+    links.forEach((element)=>{
+        element.style.color = "black"
+        element.addEventListener("mouseenter", ()=> {
+            element.style.color = "white";
+        });
+            element.addEventListener("mouseleave", ()=> {
+            element.style.color = "#291D1E"; 
+        });
+
+    })
+
+    let h1 = document.querySelectorAll("h1");
+
+    h1.forEach((element)=>{
+        element.style.color = "black"
+    })
+
+
     let futbol = document.querySelectorAll(".cards-futbol");
     let tenis = document.querySelectorAll(".cards-tenis");
     let basquet = document.querySelectorAll(".cards-basquet");
     let span = document.querySelectorAll("span");
+
+   
 
     futbol.forEach((element) => {
       element.style.backgroundColor = "white";
@@ -135,6 +206,9 @@ toogler.addEventListener("click", () => {
       element.style.color = "black";
     });
 
+ 
+
+
   } 
   else {
 
@@ -149,10 +223,33 @@ toogler.addEventListener("click", () => {
 
     localStorage.setItem("tema", "dark");
 
+    let header = document.querySelector(".headers-fondo")
+    header.style.backgroundColor = "#291D1E"
+    let links = document.querySelectorAll(".nav-link")
+    links.forEach((element)=>{
+        element.style.color = "#F5A454"
+        element.addEventListener("mouseenter", ()=> {
+            element.style.color = "#F6D7AC";
+        });
+            element.addEventListener("mouseleave", ()=> {
+            element.style.color = "#F5A454"; 
+        });
+
+    })
+
+
+    let h1 = document.querySelectorAll("h1");
+
+    h1.forEach((element)=>{
+        element.style.color = "white"
+    })
+
     let futbol = document.querySelectorAll(".cards-futbol");
     let tenis = document.querySelectorAll(".cards-tenis");
     let basquet = document.querySelectorAll(".cards-basquet");
     let span = document.querySelectorAll("span");
+
+
 
     futbol.forEach((element) => {
       element.style.backgroundColor = "#291D1E";
