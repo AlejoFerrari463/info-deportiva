@@ -13,10 +13,10 @@
     margin-top: 40px;
     width: 92%;
     height: auto;
-    background-color: #291D1E;
-    box-shadow: 3px 3px 12px #F6D7AC, -3px -3px 12px #F6D7AC;
+    background-color: $color-principal;
+    box-shadow: 3px 3px 12px $color-terciario, -3px -3px 12px  $color-terciario;
     padding-bottom: 40px;
-    color: #F5A454;
+    color:  $color-secundario;
 
 }
 
