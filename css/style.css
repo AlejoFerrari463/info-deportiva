@@ -1,3 +1,31 @@
+.toogler-tema-contenedor {
+  position: absolute;
+  right: 10px;
+  top: 80px;
+  width: 90px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #291D1E;
+  box-shadow: 0 0 10px white;
+  cursor: pointer;
+}
+
+.toogler-tema {
+  position: relative;
+  top: 10px;
+  left: 5px;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 10px;
+  transition: 0.4s left;
+}
+
+.active {
+  left: 65px;
+  transition: 0.4s left;
+}
+
 /* GENERALES - INICIO */
 * {
   padding: 0;
@@ -6,6 +34,10 @@
 
 body {
   background-color: black;
+}
+
+.light-mode {
+  background-color: white;
 }
 
 a {
@@ -105,10 +137,7 @@ span {
   margin-top: 40px;
   width: 92%;
   height: auto;
-  background-color: #291D1E;
-  box-shadow: 3px 3px 12px #F6D7AC, -3px -3px 12px #F6D7AC;
   padding-bottom: 40px;
-  color: #F6D7AC;
 }
 
 .cards-resultado-futbol {
@@ -136,10 +165,7 @@ span {
   margin-top: 40px;
   width: 92%;
   height: auto;
-  background-color: #291D1E;
-  box-shadow: 3px 3px 12px #F6D7AC, -3px -3px 12px #F6D7AC;
   padding-bottom: 40px;
-  color: #F5A454;
 }
 
 .cards-resultado-basquet {
@@ -167,10 +193,7 @@ span {
   margin-top: 40px;
   width: 92%;
   height: auto;
-  background-color: #291D1E;
-  box-shadow: 3px 3px 12px #F6D7AC, -3px -3px 12px #F6D7AC;
   padding-bottom: 40px;
-  color: #F5A454;
 }
 
 .cards-resultado-tenis {
