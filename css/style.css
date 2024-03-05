@@ -223,6 +223,10 @@ span {
   width: 45px;
 }
 
+.divisores {
+  color: white;
+}
+
 /* TENIS - FIN */
 /* MEDIAS - INICIO */
 @media screen and (min-width: 992px) {

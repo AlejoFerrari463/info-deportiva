@@ -67,6 +67,8 @@ if (localStorage.getItem("tema") == "light") {
 
     span.forEach((element) => {
       element.style.color = "black";
+      element.classList.replace("text-light","text-dark")
+
     });
 
 
@@ -140,6 +142,8 @@ else {
 
     span.forEach((element) => {
       element.style.color = "#F6D7AC";
+      element.classList.replace("text-dark","text-light")
+
     });
 
   });
@@ -213,6 +217,7 @@ toogler.addEventListener("click", () => {
 
     span.forEach((element) => {
       element.style.color = "black";
+      element.classList.replace("text-light","text-dark")
     });
 
 
@@ -281,6 +286,8 @@ toogler.addEventListener("click", () => {
 
     span.forEach((element) => {
       element.style.color = "#F6D7AC";
+      element.classList.replace("text-dark","text-light")
+
     });
 
   }
