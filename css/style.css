@@ -75,6 +75,10 @@ span {
   color: #F6D7AC;
 }
 
+.nav-li {
+  display: inline-block;
+}
+
 /* HEADER - FIN */
 /* MENU-HAMBURGUESA - INICIO */
 .menu-hamburguesa {
@@ -91,7 +95,7 @@ span {
 
 .menu-desplegar {
   position: fixed;
-  width: 60vw;
+  width: 70vw;
   height: 100vh;
   background-color: #291D1E;
   top: 0;
