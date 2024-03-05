@@ -1,6 +1,6 @@
 /* MEDIAS - INICIO */
 
-
+/* MENU HAMBURGUESA */
 @media screen and (min-width: 992px) {
 
     .menu-hamburguesa {
@@ -22,6 +22,11 @@
 
 }
 
+/* MENU HAMBURGUESA */
+
+
+
+/* CARDS */
 @media screen and (min-width: 0px) and (max-width: 560px){
 
     .cards-contenedor-tenis {
@@ -42,6 +47,22 @@
 
     }
 
+    .cards-basquet {
+
+        width: 97%;
+
+    }
+
+    .cards-imagen-basquet {
+ 
+        height: 80px;
+        width: 80px;
+        margin: 5px;
+    
+
+    }
+
+
     .cards-futbol {
 
         width: 97%;
@@ -53,11 +74,16 @@
 
     }
 
-    .cards-basquet {
-
-        width: 97%;
+   
+    .cards-imagen-futbol {
+ 
+        height: 80px;
+        width: 80px;
+        margin: 5px;
+    
 
     }
+
 
 
 
@@ -89,6 +115,10 @@
 }
 
 
+
+/* CARDS */
+
+/* TOOGLER */
 @media screen and (max-width: 600px) {
     
     .toogler-tema-contenedor {
@@ -124,6 +154,8 @@
 
 
 }
+
+/* TOOGLER */
 
 
 /* MEDIAS - FIN */

@@ -229,6 +229,7 @@ span {
 
 /* TENIS - FIN */
 /* MEDIAS - INICIO */
+/* MENU HAMBURGUESA */
 @media screen and (min-width: 992px) {
   .menu-hamburguesa {
     display: none;
@@ -239,6 +240,8 @@ span {
     display: none;
   }
 }
+/* MENU HAMBURGUESA */
+/* CARDS */
 @media screen and (min-width: 0px) and (max-width: 560px) {
   .cards-contenedor-tenis {
     grid-template-columns: 1fr;
@@ -249,14 +252,24 @@ span {
   .cards-contenedor-basquet {
     grid-template-columns: 1fr;
   }
+  .cards-basquet {
+    width: 97%;
+  }
+  .cards-imagen-basquet {
+    height: 80px;
+    width: 80px;
+    margin: 5px;
+  }
   .cards-futbol {
     width: 97%;
   }
   .cards-contenedor-futbol {
     grid-template-columns: 1fr;
   }
-  .cards-basquet {
-    width: 97%;
+  .cards-imagen-futbol {
+    height: 80px;
+    width: 80px;
+    margin: 5px;
   }
 }
 @media screen and (min-width: 561px) and (max-width: 992px) {
@@ -270,6 +283,8 @@ span {
     grid-template-columns: 1fr;
   }
 }
+/* CARDS */
+/* TOOGLER */
 @media screen and (max-width: 600px) {
   .toogler-tema-contenedor {
     width: 80px;
@@ -290,6 +305,7 @@ span {
     transition: 0.4s left;
   }
 }
+/* TOOGLER */
 /* MEDIAS - FIN */
 
 /*# sourceMappingURL=style.css.map */
