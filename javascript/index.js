@@ -10,21 +10,27 @@ if (localStorage.getItem("tema") == "light") {
 
     toogler.style.boxShadow = "0 0 10px black"
 
-    const active = document.querySelector(".toogler-tema");
-    active.style.transition = "none";
+    toogler.style.backgroundColor = "white"
+
+    let active = document.querySelector(".toogler-tema");
+    active.style.transition = "0.4s left";
     active.classList.add("active");
+    active.style.backgroundColor = "black"
+
 
     
     let header = document.querySelector(".headers-fondo")
     header.style.backgroundColor = "#F5A454"
+
     let links = document.querySelectorAll(".nav-link")
     links.forEach((element)=>{
         element.style.color = "black"
         element.addEventListener("mouseenter", ()=> {
-            element.style.color = "white";
+          element.style.color = "white";
         });
-            element.addEventListener("mouseleave", ()=> {
-            element.style.color = "#291D1E"; 
+
+        element.addEventListener("mouseleave", ()=> {
+          element.style.color = "#291D1E"; 
         });
 
     })
@@ -151,11 +157,14 @@ toogler.addEventListener("click", () => {
   if (mode) {
 
     document.body.classList.replace("dark-mode", "light-mode");
+    
     toogler.style.boxShadow = "0 0 10px black"
+    toogler.style.backgroundColor = "white"
 
-    const active = document.querySelector(".toogler-tema");
+    let active = document.querySelector(".toogler-tema");
     active.style.transition = "0.4s left";
     active.classList.add("active");
+    active.style.backgroundColor = "black"
 
     localStorage.setItem("tema", "light");
 
@@ -208,16 +217,19 @@ toogler.addEventListener("click", () => {
 
 
   } 
+
   else {
 
 
     document.body.classList.replace("light-mode", "dark-mode");
+    
     toogler.style.boxShadow = "0 0 10px white"
-
+    toogler.style.backgroundColor = "#291D1E"
 
     const active = document.querySelector(".toogler-tema");
     active.style.transition = "0.4s left";
     active.classList.remove("active");
+    active.style.backgroundColor = "white"
 
     localStorage.setItem("tema", "dark");
 
@@ -357,7 +369,6 @@ document.addEventListener(
   "touchmove",
   () => {
     const menuDesplegar = document.querySelector(".menu-desplegar");
-    // Verificar si el evento touchmove ocurrió dentro del menú desplegable
     if (menuDesplegar && menuDesplegar.contains(event.target)) {
       event.preventDefault(); // Prevenir el desplazamiento táctil dentro del menú desplegable
     }
