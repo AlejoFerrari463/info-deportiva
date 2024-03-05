@@ -84,13 +84,13 @@ span {
 /* MENU-HAMBURGUESA - INICIO */
 .menu-hamburguesa {
   position: absolute;
-  top: 11px;
-  left: 0;
+  top: 17px;
+  left: 5px;
 }
 
 .menu-imagen {
-  width: 60px;
-  object-fit: contain;
+  font-size: 40px;
+  color: #F5A454;
   cursor: pointer;
 }
 

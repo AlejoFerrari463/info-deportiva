@@ -8,17 +8,6 @@ if (localStorage.getItem("tema") == "light") {
 
     element.classList.replace("dark-mode", "light-mode");
 
-    toogler.style.boxShadow = "0 0 10px black"
-
-    toogler.style.backgroundColor = "white"
-
-    let active = document.querySelector(".toogler-tema");
-    active.style.transition = "0.4s left";
-    active.classList.add("active");
-    active.style.backgroundColor = "black"
-
-
-    
     let header = document.querySelector(".headers-fondo")
     header.style.backgroundColor = "#F5A454"
 
@@ -34,7 +23,20 @@ if (localStorage.getItem("tema") == "light") {
         });
 
     })
-    
+
+    let menuImagen = document.querySelector(".menu-imagen")
+    menuImagen.style.color = "black"
+
+    toogler.style.boxShadow = "0 0 10px black"
+    toogler.style.backgroundColor = "white"
+
+    let active = document.querySelector(".toogler-tema");
+    active.style.transition = "0.4s left";
+    active.classList.add("active");
+    active.style.backgroundColor = "black"
+
+
+ 
     let h1 = document.querySelectorAll("h1");
 
     h1.forEach((element)=>{
@@ -96,16 +98,9 @@ else {
 
   todos.forEach((element) => {
 
-    element.classList.replace("light-mode", "dark-mode");
-    toogler.style.boxShadow = "0 0 10px white"
-
-
-
-    const active = document.querySelector(".toogler-tema");
-    active.style.transition = "0.4s left";
-    active.classList.remove("active");
-
     localStorage.setItem("tema", "dark");
+
+    element.classList.replace("light-mode", "dark-mode");
 
     let header = document.querySelector(".headers-fondo")
     header.style.backgroundColor = "#291D1E"
@@ -120,6 +115,17 @@ else {
         });
 
     })
+
+    let menuImagen = document.querySelector(".menu-imagen")
+    menuImagen.style.color = "#F5A454"
+
+    toogler.style.boxShadow = "0 0 10px white"
+    toogler.style.backgroundColor = "#291D1E"
+
+    const active = document.querySelector(".toogler-tema");
+    active.style.transition = "0.4s left";
+    active.classList.remove("active");
+    active.style.backgroundColor = "white"
 
     
     let h1 = document.querySelectorAll("h1");
@@ -173,17 +179,9 @@ toogler.addEventListener("click", () => {
 
   if (mode) {
 
-    document.body.classList.replace("dark-mode", "light-mode");
-    
-    toogler.style.boxShadow = "0 0 10px black"
-    toogler.style.backgroundColor = "white"
-
-    let active = document.querySelector(".toogler-tema");
-    active.style.transition = "0.4s left";
-    active.classList.add("active");
-    active.style.backgroundColor = "black"
-
     localStorage.setItem("tema", "light");
+
+    document.body.classList.replace("dark-mode", "light-mode");
 
     let header = document.querySelector(".headers-fondo")
     header.style.backgroundColor = "#F5A454"
@@ -200,6 +198,18 @@ toogler.addEventListener("click", () => {
 
     })
 
+    let menuImagen = document.querySelector(".menu-imagen")
+    menuImagen.style.color = "black"
+    
+    toogler.style.boxShadow = "0 0 10px black"
+    toogler.style.backgroundColor = "white"
+
+    let active = document.querySelector(".toogler-tema");
+    active.style.transition = "0.4s left";
+    active.classList.add("active");
+    active.style.backgroundColor = "black"
+
+
     let h1 = document.querySelectorAll("h1");
     h1.forEach((element)=>{
         element.style.color = "black"
@@ -210,6 +220,7 @@ toogler.addEventListener("click", () => {
     let tenis = document.querySelectorAll(".cards-tenis");
     let basquet = document.querySelectorAll(".cards-basquet");
     let span = document.querySelectorAll("span");
+
     futbol.forEach((element) => {
       element.style.backgroundColor = "white";
       element.style.color = "black";
@@ -252,18 +263,10 @@ toogler.addEventListener("click", () => {
 
   else {
 
+    localStorage.setItem("tema", "dark");
+
 
     document.body.classList.replace("light-mode", "dark-mode");
-    
-    toogler.style.boxShadow = "0 0 10px white"
-    toogler.style.backgroundColor = "#291D1E"
-
-    const active = document.querySelector(".toogler-tema");
-    active.style.transition = "0.4s left";
-    active.classList.remove("active");
-    active.style.backgroundColor = "white"
-
-    localStorage.setItem("tema", "dark");
 
     let header = document.querySelector(".headers-fondo")
     header.style.backgroundColor = "#291D1E"
@@ -279,6 +282,17 @@ toogler.addEventListener("click", () => {
 
     })
 
+    let menuImagen = document.querySelector(".menu-imagen")
+    menuImagen.style.color = "#F5A454"
+
+    
+    toogler.style.boxShadow = "0 0 10px white"
+    toogler.style.backgroundColor = "#291D1E"
+
+    const active = document.querySelector(".toogler-tema");
+    active.style.transition = "0.4s left";
+    active.classList.remove("active");
+    active.style.backgroundColor = "white"
 
     let h1 = document.querySelectorAll("h1");
 
