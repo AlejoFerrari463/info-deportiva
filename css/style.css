@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .toogler-tema-contenedor {
   position: absolute;
   right: 10px;
@@ -228,6 +229,21 @@ span {
 }
 
 /* TENIS - FIN */
+.redes-sociales {
+  border-top: 1px solid #F5A454;
+  padding: 30px 0px;
+}
+
+.footer-tamaño-redes {
+  font-size: 50px;
+  margin: 0 20px;
+  color: #F5A454;
+}
+
+.footer-tamaño-redes:hover {
+  color: #F6D7AC;
+}
+
 /* MEDIAS - INICIO */
 /* MENU HAMBURGUESA */
 @media screen and (min-width: 992px) {

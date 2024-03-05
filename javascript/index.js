@@ -71,6 +71,19 @@ if (localStorage.getItem("tema") == "light") {
 
     });
 
+    let footer = document.querySelector(".redes-sociales")
+    footer.style.borderTop = "1px solid black"
+    
+    let redes = footer.querySelectorAll(".footer-tamaño-redes")
+    redes.forEach((element)=>{
+      element.style.color = "black"
+      element.addEventListener("mouseenter", ()=> {
+        element.style.color = "#342F24";
+      });
+        element.addEventListener("mouseleave", ()=> {
+        element.style.color = "black"; 
+      });
+    })
 
    
 
@@ -220,6 +233,20 @@ toogler.addEventListener("click", () => {
       element.classList.replace("text-light","text-dark")
     });
 
+    let footer = document.querySelector(".redes-sociales")
+    footer.style.borderTop = "1px solid black"
+    
+    let redes = footer.querySelectorAll(".footer-tamaño-redes")
+    redes.forEach((element)=>{
+      element.style.color = "black"
+      element.addEventListener("mouseenter", ()=> {
+        element.style.color = "#342F24";
+      });
+        element.addEventListener("mouseleave", ()=> {
+        element.style.color = "black"; 
+      });
+    })
+
 
   } 
 
@@ -289,6 +316,20 @@ toogler.addEventListener("click", () => {
       element.classList.replace("text-dark","text-light")
 
     });
+
+    let footer = document.querySelector(".redes-sociales")
+    footer.style.borderTop = "1px solid #F5A454"
+    
+    let redes = footer.querySelectorAll(".footer-tamaño-redes")
+    redes.forEach((element)=>{
+      element.style.color = "#F5A454"
+      element.addEventListener("mouseenter", ()=> {
+        element.style.color = "#F6D7AC";
+      });
+        element.addEventListener("mouseleave", ()=> {
+        element.style.color = "#F5A454"; 
+      });
+    })
 
   }
 
